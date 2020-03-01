@@ -145,7 +145,7 @@ checkoutBtn.addEventListener("click", function () {
             .value;
 
          if (productOneQuntity != null && productOneQuntity >= 1) {
-            console.log(productOneQuntity);
+            
 
             calcualteQuentityChangePrice(
                "productOnePrice",
@@ -154,7 +154,7 @@ checkoutBtn.addEventListener("click", function () {
             );
          } else {
             document.getElementById("productOneQuantity").value = 1;
-            console.log("null");
+            
          }
       });
 
@@ -241,7 +241,7 @@ checkoutBtn.addEventListener("click", function () {
          document.getElementById("subtotalprice").innerText = finalTotalPrice;
       }
 
-      // increase product Quentity
+      // increase product Quantity
       function increaseProductQun(price, quantity, constPrice) {
          const constantProductPrice = constPrice;
 
